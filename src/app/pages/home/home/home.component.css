@@ -1,9 +1,6 @@
-body {
-    background-color: #87ceeb; /* Fondo azul */
-    font-family: Arial, sans-serif;
-  }
+
   
-  .header {
+.header {
     text-align: center;
     background-color: rgb(255, 149, 0);
     padding: 0.5rem; /* Reducido el padding del header */

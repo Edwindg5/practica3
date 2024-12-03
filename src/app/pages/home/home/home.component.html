@@ -1,0 +1,18 @@
+<div class="header">
+    <h1>Pokémon List</h1>
+  </div>
+  
+  <div *ngIf="groupedPokemonList.length > 0" class="pokemon-container">
+    <div class="pokemon-row" *ngFor="let group of groupedPokemonList">
+      <div class="card" *ngFor="let pokemon of group">
+        <img [src]="pokemon.image" [alt]="pokemon.name" />
+        <div class="content">
+          <h3 class="title">{{ pokemon.name | titlecase }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="groupedPokemonList.length === 0" class="loading">
+    <p>Loading Pokémon...</p>
+  </div>
